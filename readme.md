@@ -2,7 +2,7 @@
 
 A text-based game & game engine in Streamlit
 
-Deployed here: [adventure.streamlit.app](https://adventure.streamlit.app)
+Deployed here: [adventure.streamlit.app](https://cosmic-adventure.streamlit.app/)
 
 ## Lore
 
