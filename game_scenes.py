@@ -106,7 +106,7 @@ def introScene():
 ################################################
 
 
-def sheepScene():
+def unicornScene():
 
     # possible actions
     directions = ["left", "right", "back", "pet", "help"]
@@ -304,7 +304,7 @@ def caveScene():
 ################################################
 
 
-def poScene():
+def astroScene():
 
     # possible actions
     directions = ["left", "right", "back", "buy", "help"]
