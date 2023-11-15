@@ -106,7 +106,7 @@ def introScene():
 ################################################
 
 
-def unicornScene():
+def sheepScene():
 
     # possible actions
     directions = ["left", "right", "back", "pet", "help"]
