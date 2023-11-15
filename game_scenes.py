@@ -73,7 +73,7 @@ def introScene():
         if scene_action.lower() == "left":
             st.session_state["scenes_counter"]["intro_counter"] += 1
             st.session_state.place = (
-                "sheepScene"  # we are moving our character to other scene
+                "unicornScene"  # we are moving our character to other scene
             )
             game_def.temp_clear()  # we are claring text input
             st.experimental_rerun()  # rerun is streamlit specific and rerund the app
@@ -106,7 +106,7 @@ def introScene():
 ################################################
 
 
-def sheepScene():
+def unicornScene():
 
     # possible actions
     directions = ["left", "right", "back", "pet", "help"]
@@ -114,7 +114,7 @@ def sheepScene():
     col1, col2 = st.columns(2, gap="small")
     with col1:
         # scene image
-        st.image(game_config.image_source["sheepScene"])
+        st.image(game_config.image_source["unicornScene"])
         st.write("Magical Unicorn")
     with col2:
         st.markdown(
