@@ -304,7 +304,7 @@ def caveScene():
 ################################################
 
 
-def astroScene():
+def poScene():
 
     # possible actions
     directions = ["left", "right", "back", "buy", "help"]
