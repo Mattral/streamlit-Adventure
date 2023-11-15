@@ -284,7 +284,7 @@ def caveScene():
         # ------------
         if scene_action.lower() == "up":
             st.session_state["scenes_counter"]["cave_counter"] += 1
-            st.session_state.place = "poScene"
+            st.session_state.place = "astroScene"
             game_def.temp_clear()
             st.experimental_rerun()
 
@@ -304,7 +304,7 @@ def caveScene():
 ################################################
 
 
-def poScene():
+def astroScene():
 
     # possible actions
     directions = ["left", "right", "back", "buy", "help"]
@@ -312,7 +312,7 @@ def poScene():
     col1, col2 = st.columns(2, gap="small")
     with col1:
         # main_image
-        st.image(game_config.image_source["poScene"])
+        st.image(game_config.image_source["astroScene"])
         st.write("Product manager's hideout")
     with col2:
         # scene text
@@ -493,7 +493,7 @@ def dragonScene():
                     st.experimental_rerun()
 
             if scene_action.lower() == "back":
-                st.session_state.place = "poScene"
+                st.session_state.place = "astroScene"
                 game_def.temp_clear()
                 st.experimental_rerun()
 
