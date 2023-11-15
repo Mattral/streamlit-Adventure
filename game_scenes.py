@@ -313,7 +313,7 @@ def astroScene():
     with col1:
         # main_image
         st.image(game_config.image_source["astroScene"])
-        st.write("Product manager's hideout")
+        st.write("Intergalatic explorer")
     with col2:
         # scene text
         st.markdown(
@@ -403,7 +403,7 @@ def dragonScene():
     with col2:
         # scene text
         st.markdown(
-            f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>Oh no! PM was wrong about going left! It\'s a Neural Network, AI, Deep Learning, Cloud Generated Dragonoid Monster! (NNADLBDGD)</p></div>',
+            f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>Oh no! You encountered a new entity! It\'s a Neural Network, AI, Deep Learning, Cloud Generated Dragonoid Monster! (NNADLBDGD)</p></div>',
             unsafe_allow_html=True,
         )
         audio_file = open("audio/dragon.mp3", "rb")
