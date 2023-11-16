@@ -60,6 +60,16 @@ def introScene():
         args=["introSceneActions"],
     )
 
+    # input container with buttons
+    if st.button("Left"):
+        st.session_state["temp"] = "left"
+    if st.button("Right"):
+        st.session_state["temp"] = "right"
+    if st.button("South"):
+        st.session_state["temp"] = "south"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
+
     # this is probably redundancy
     scene_action = st.session_state["temp"]
 
@@ -148,6 +158,15 @@ def unicornScene():
         on_change=game_def.clear,
         args=["sheepSceneActions"],
     )
+    # input container with buttons
+    if st.button("Left"):
+        st.session_state["temp"] = "left"
+    if st.button("Right"):
+        st.session_state["temp"] = "right"
+    if st.button("Back"):
+        st.session_state["temp"] = "back"
+    if st.button("Pet"):
+        st.session_state["temp"] = "pet"
 
     scene_action = st.session_state["temp"]
 
@@ -279,6 +298,14 @@ def caveScene():
         args=["caveSceneActions"],
     )
 
+    # input container with buttons
+    if st.button("up"):
+        st.session_state["temp"] = "up"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
+        
     scene_action = st.session_state["temp"]
 
     if scene_action.lower() in directions:
@@ -353,6 +380,16 @@ def astroScene():
         on_change=game_def.clear,
         args=["poSceneActions"],  # potentially dynamic key based on function name?
     )
+
+    # input container with buttons
+    if st.button("Left"):
+        st.session_state["temp"] = "left"
+    if st.button("Right"):
+        st.session_state["temp"] = "right"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("buy"):
+        st.session_state["temp"] = "buy"
 
     scene_action = st.session_state["temp"]
 
@@ -469,6 +506,15 @@ def dragonScene():
             ],  # potentially dynamic key based on function name?
         )
 
+        if st.button("fight"):
+            st.session_state["temp"] = "fight"
+        if st.button("up"):
+            st.session_state["temp"] = "up"
+        if st.button("back"):
+            st.session_state["temp"] = "back"
+        if st.button("Help"):
+            st.session_state["temp"] = "help"
+            
         scene_action = st.session_state["temp"]
 
         if scene_action.lower() in directions:
@@ -587,6 +633,16 @@ def southpathScene():
         args=[scene_identifier + "SceneActions"],
     )
 
+    # input container with buttons
+    if st.button("North"):
+        st.session_state["temp"] = "north"
+    if st.button("South"):
+        st.session_state["temp"] = "south"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
+
     scene_action = st.session_state["temp"]
 
     if scene_action.lower() in directions:
@@ -646,7 +702,6 @@ def elfScene():
         Her movements are as fluid and enchanting as a cosmic dance, and with a wave of her hand, she manipulates the energies around her. 
         It's evident that her power transcends the natural order of the universe. 
         Her voice, a harmonious blend of music and authority, resonates with ancient wisdom and knowledge that surpasses mortal understanding.
-        
         The elf goddess reveals that she has been observing your journey and senses a destiny of cosmic proportions awaiting you. 
         With a benevolent smile, she offers her assistance. You can feel the cosmic magic emanating from her, a force that could prove invaluable in the challenges that lie ahead. 
         Will you accept the guidance and cosmic power of this ethereal being as you continue your interstellar journey?.
@@ -689,6 +744,16 @@ def elfScene():
         on_change=game_def.clear,
         args=[scene_identifier + "SceneActions"],
     )
+
+    # input container with buttons
+    if st.button("North"):
+        st.session_state["temp"] = "north"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("accept"):
+        st.session_state["temp"] = "accept"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
 
     scene_action = st.session_state["temp"]
 
