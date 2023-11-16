@@ -58,6 +58,8 @@ def introScene():
     )
 
     # input container with buttons
+    if st.button("Stay"):
+        st.session_state["temp"] = ""
     if st.button("Left"):
         st.session_state["temp"] = "left"
     if st.button("Right"):
