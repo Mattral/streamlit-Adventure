@@ -10,7 +10,7 @@ import game_scenes
 
 # -------------- app config ---------------
 
-st.set_page_config(page_title="StreamlitLand Adventure RPG", page_icon="🐲")
+st.set_page_config(page_title="Cosmic Adventure RPG", page_icon=" 🚀 ")
 
 # define external css
 def local_css(file_name):
@@ -83,10 +83,10 @@ welcome.title("Welcome to StreamlitLand, adventurer!")
 
 player_name_container = st.empty()
 player_name_container.text_input(
-    "State your name and hit enter to start the game", key="player_name"
+    "State your name and hit enter to start!", key="player_name"
 )
 main_text_container = st.empty()
-main_text_container.caption("Create your own adventure visit [GitHub](https://github.com/TomJohnH/streamlit-dungeon)")
+
 
 
 if st.session_state.player_name != "":
