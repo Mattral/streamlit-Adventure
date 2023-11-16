@@ -57,6 +57,16 @@ def introScene():
         args=["introSceneActions"],
     )
 
+    # input container with buttons
+    if st.button("Left"):
+        st.session_state["temp"] = "left"
+    if st.button("Right"):
+        st.session_state["temp"] = "right"
+    if st.button("South"):
+        st.session_state["temp"] = "south"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
+
     # this is probably redundancy
     scene_action = st.session_state["temp"]
 
@@ -139,6 +149,15 @@ def unicornScene():
         on_change=game_def.clear,
         args=["sheepSceneActions"],
     )
+    # input container with buttons
+    if st.button("Left"):
+        st.session_state["temp"] = "left"
+    if st.button("Right"):
+        st.session_state["temp"] = "right"
+    if st.button("Back"):
+        st.session_state["temp"] = "back"
+    if st.button("Pet"):
+        st.session_state["temp"] = "pet"
 
     scene_action = st.session_state["temp"]
 
@@ -266,6 +285,14 @@ def caveScene():
         args=["caveSceneActions"],
     )
 
+    # input container with buttons
+    if st.button("up"):
+        st.session_state["temp"] = "up"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
+        
     scene_action = st.session_state["temp"]
 
     if scene_action.lower() in directions:
@@ -335,6 +362,16 @@ def astroScene():
         on_change=game_def.clear,
         args=["poSceneActions"],  # potentially dynamic key based on function name?
     )
+
+    # input container with buttons
+    if st.button("Left"):
+        st.session_state["temp"] = "left"
+    if st.button("Right"):
+        st.session_state["temp"] = "right"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("buy"):
+        st.session_state["temp"] = "buy"
 
     scene_action = st.session_state["temp"]
 
@@ -447,6 +484,15 @@ def dragonScene():
             ],  # potentially dynamic key based on function name?
         )
 
+        if st.button("fight"):
+            st.session_state["temp"] = "fight"
+        if st.button("up"):
+            st.session_state["temp"] = "up"
+        if st.button("back"):
+            st.session_state["temp"] = "back"
+        if st.button("Help"):
+            st.session_state["temp"] = "help"
+            
         scene_action = st.session_state["temp"]
 
         if scene_action.lower() in directions:
@@ -562,6 +608,16 @@ def southpathScene():
         args=[scene_identifier + "SceneActions"],
     )
 
+    # input container with buttons
+    if st.button("North"):
+        st.session_state["temp"] = "north"
+    if st.button("South"):
+        st.session_state["temp"] = "south"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
+
     scene_action = st.session_state["temp"]
 
     if scene_action.lower() in directions:
@@ -657,6 +713,16 @@ def elfScene():
         on_change=game_def.clear,
         args=[scene_identifier + "SceneActions"],
     )
+
+    # input container with buttons
+    if st.button("North"):
+        st.session_state["temp"] = "north"
+    if st.button("back"):
+        st.session_state["temp"] = "back"
+    if st.button("accept"):
+        st.session_state["temp"] = "accept"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
 
     scene_action = st.session_state["temp"]
 
