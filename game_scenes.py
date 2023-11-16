@@ -73,7 +73,7 @@ def introScene():
         if scene_action.lower() == "left":
             st.session_state["scenes_counter"]["intro_counter"] += 1
             st.session_state.place = (
-                "sheepScene"  # we are moving our character to other scene
+                "unicornScene"  # we are moving our character to other scene
             )
             game_def.temp_clear()  # we are claring text input
             st.experimental_rerun()  # rerun is streamlit specific and rerund the app
@@ -106,7 +106,7 @@ def introScene():
 ################################################
 
 
-def sheepScene():
+def unicornScene():
 
     # possible actions
     directions = ["left", "right", "back", "pet", "help"]
@@ -114,7 +114,7 @@ def sheepScene():
     col1, col2 = st.columns(2, gap="small")
     with col1:
         # scene image
-        st.image(game_config.image_source["sheepScene"])
+        st.image(game_config.image_source["unicornScene"])
         st.write("Magical Unicorn")
     with col2:
         st.markdown(
@@ -284,7 +284,7 @@ def caveScene():
         # ------------
         if scene_action.lower() == "up":
             st.session_state["scenes_counter"]["cave_counter"] += 1
-            st.session_state.place = "poScene"
+            st.session_state.place = "astroScene"
             game_def.temp_clear()
             st.experimental_rerun()
 
@@ -304,7 +304,7 @@ def caveScene():
 ################################################
 
 
-def poScene():
+def astroScene():
 
     # possible actions
     directions = ["left", "right", "back", "buy", "help"]
@@ -312,8 +312,8 @@ def poScene():
     col1, col2 = st.columns(2, gap="small")
     with col1:
         # main_image
-        st.image(game_config.image_source["poScene"])
-        st.write("Product manager's hideout")
+        st.image(game_config.image_source["astroScene"])
+        st.write("Intergalatic explorer")
     with col2:
         # scene text
         st.markdown(
@@ -403,7 +403,7 @@ def dragonScene():
     with col2:
         # scene text
         st.markdown(
-            f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>Oh no! PM was wrong about going left! It\'s a Neural Network, AI, Deep Learning, Cloud Generated Dragonoid Monster! (NNADLBDGD)</p></div>',
+            f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>Oh no! You encountered a new entity! It\'s a Neural Network, AI, Deep Learning, Cloud Generated Dragonoid Monster! (NNADLBDGD)</p></div>',
             unsafe_allow_html=True,
         )
         audio_file = open("audio/dragon.mp3", "rb")
@@ -493,7 +493,7 @@ def dragonScene():
                     st.experimental_rerun()
 
             if scene_action.lower() == "back":
-                st.session_state.place = "poScene"
+                st.session_state.place = "astroScene"
                 game_def.temp_clear()
                 st.experimental_rerun()
 
