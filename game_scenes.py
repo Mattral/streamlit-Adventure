@@ -57,6 +57,16 @@ def introScene():
         args=["introSceneActions"],
     )
 
+    # input container with buttons
+    if st.button("Left"):
+        st.session_state["temp"] = "left"
+    if st.button("Right"):
+        st.session_state["temp"] = "right"
+    if st.button("South"):
+        st.session_state["temp"] = "south"
+    if st.button("Help"):
+        st.session_state["temp"] = "help"
+
     # this is probably redundancy
     scene_action = st.session_state["temp"]
 
