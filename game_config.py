@@ -1,5 +1,5 @@
 caption_below_input = 'Use mouse or [Tab] to focus on input field. To check potential actions, type "help".'
-# future improvements: all texts will be transferred to database this will clean up the code
+# future improvements: all texts will be transferred to database this will clean up the code.
 
 image_source = {
     "introScene": "images/intro.png",
