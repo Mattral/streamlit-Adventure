@@ -77,7 +77,7 @@ local_css("style.css")
 
 
 welcome = st.empty()
-welcome.title("Welcome to StreamlitLand, adventurer!")
+welcome.title("Welcome, Adventurer!")
 
 # hero base statistics
 
