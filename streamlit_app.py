@@ -105,7 +105,7 @@ if start:
     if st.session_state.place == "introScene":
         game_scenes.introScene()
     elif st.session_state.place == "unicornScene":
-        game_scenes.sheepScene()
+        game_scenes.unicornScene()
     elif st.session_state.place == "southpathScene":
         game_scenes.southpathScene()
     elif st.session_state.place == "elfScene":
@@ -113,7 +113,7 @@ if start:
     elif st.session_state.place == "caveScene":
         game_scenes.caveScene()
     elif st.session_state.place == "astroScene":
-        game_scenes.poScene()
+        game_scenes.astroScene()
     elif st.session_state.place == "dragonScene":
         game_scenes.dragonScene()
     elif st.session_state.place == "libraryScene":
