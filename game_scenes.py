@@ -56,7 +56,7 @@ def introScene():
         on_change=game_def.clear,
         args=["introSceneActions"],
     )
-"""
+    """
     # input container with buttons
     if st.button("Stay"):
         st.session_state["temp"] = ""
@@ -68,7 +68,7 @@ def introScene():
         st.session_state["temp"] = "south"
     if st.button("Help"):
         st.session_state["temp"] = "help"
-"""
+    """
     # this is probably redundancy
     scene_action = st.session_state["temp"]
 
