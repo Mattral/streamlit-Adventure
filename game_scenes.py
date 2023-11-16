@@ -677,7 +677,6 @@ def elfScene():
         Her movements are as fluid and enchanting as a cosmic dance, and with a wave of her hand, she manipulates the energies around her. 
         It's evident that her power transcends the natural order of the universe. 
         Her voice, a harmonious blend of music and authority, resonates with ancient wisdom and knowledge that surpasses mortal understanding.
-        
         The elf goddess reveals that she has been observing your journey and senses a destiny of cosmic proportions awaiting you. 
         With a benevolent smile, she offers her assistance. You can feel the cosmic magic emanating from her, a force that could prove invaluable in the challenges that lie ahead. 
         Will you accept the guidance and cosmic power of this ethereal being as you continue your interstellar journey?.
