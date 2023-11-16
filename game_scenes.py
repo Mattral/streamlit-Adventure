@@ -30,7 +30,10 @@ def introScene():
                 unsafe_allow_html=True,
             )
 
-            audio_file = open("audio/intro.mp3", "rb")
+            intro_text='Welcome, {st.session_state.player_name}, to a distant and unexplored exoplanet. Your spacecraft has crash-landed, into an enchanted forest and you find yourself in a world of unknown wonders and dangers. May fortune be on your side as you embark on this journey.'
+            audio_save(intro_text,tts_intro)
+            
+            audio_file = open("audio/tts_intro.mp3", "rb")
             audio_bytes = audio_file.read()
             st.audio(audio_bytes, format="audio/mpeg")
 
@@ -121,7 +124,13 @@ def unicornScene():
             f'<div class="fantasy-container" style="min-height:258.17px"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>As you traverse the alien landscape, you encounter a majestic creature with a shimmering horn – a unicorn native to this extraterrestrial realm. The air is filled with an otherworldly glow, and the unicorn seems to emit a magical aura. Do you approach and try to communicate with this mythical being?</p></div>',
             unsafe_allow_html=True,
         )
-        audio_file = open("audio/sheep.mp3", "rb")
+
+
+        sheep_text='As you traverse the alien landscape, you encounter a majestic creature with a shimmering horn – a unicorn native to this extraterrestrial realm. The air is filled with an otherworldly glow, and the unicorn seems to emit a magical aura. Do you approach and try to communicate with this mythical being?'
+        audio_save(intro_text,tts_sheep)
+
+        
+        audio_file = open("audio/tts_sheep.mp3", "rb")
         audio_bytes = audio_file.read()
         st.audio(audio_bytes, format="audio/mpeg")
 
@@ -240,7 +249,11 @@ def caveScene():
                 f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>After hours of traversing the alien landscape, you come upon the entrance of a cavernous structure made of extraterrestrial rock. According to the records in your astronaut guide, this cave is known as The Echoing Abyss. It is said that those who dare to explore its depths might uncover the secrets of this mysterious exoplanet. A strange luminescence emanates from the cavern, casting an otherworldly glow. The air within shivers with an unknown energy. Your spacesuit\'s sensors flicker with erratic readings, indicating the presence of undiscovered elements. Do you have the courage to step into the unknown and explore the depths of The Echoing Abyss?</p></div>',
                 unsafe_allow_html=True,
             )
-            audio_file = open("audio/cave.mp3", "rb")
+
+            cave_text='After hours of traversing the alien landscape, you come upon the entrance of a cavernous structure made of extraterrestrial rock. According to the records in your astronaut guide, this cave is known as The Echoing Abyss. It is said that those who dare to explore its depths might uncover the secrets of this mysterious exoplanet. A strange luminescence emanates from the cavern, casting an otherworldly glow. The air within shivers with an unknown energy. Your spacesuit\'s sensors flicker with erratic readings, indicating the presence of undiscovered elements. Do you have the courage to step into the unknown and explore the depths of The Echoing Abyss?'
+            audio_save(cave_text,tts_cave)
+        
+            audio_file = open("audio/tts_cave.mp3", "rb")
             audio_bytes = audio_file.read()
             st.audio(audio_bytes, format="audio/mpeg")
         else:
@@ -320,7 +333,12 @@ def astroScene():
             f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>In the dim light of the alien world, you come across a disheveled figure wearing a high-tech exosuit. This individual was once a skilled intergalactic explorer, tirelessly working to uncover the secrets of the cosmos. However, a catastrophic malfunction in their advanced navigation system stranded them on this uncharted exoplanet. The stranded explorer, once adept at discovering new frontiers, now survives by trading rare extraterrestrial artifacts. Among their collection, a peculiar energy weapon catches your eye. The explorer, with a grim determination, mentions that this advanced weapon is the key to securing passage through the hazardous terrains of this alien world. They propose a trade - the weapon in exchange for a vital resource needed for spacecraft repairs, 30 Golds. As you listen to the offer, the eerie sounds of unknown creatures echo in the distance. Will you accept the deal and risk the unknown dangers, or explore other options on this enigmatic exoplanet?</p></div>',
             unsafe_allow_html=True,
         )
-        audio_file = open("audio/po.mp3", "rb")
+
+        astro_text='In the dim light of the alien world, you come across a disheveled figure wearing a high-tech exosuit. This individual was once a skilled intergalactic explorer, tirelessly working to uncover the secrets of the cosmos. However, a catastrophic malfunction in their advanced navigation system stranded them on this uncharted exoplanet. The stranded explorer, once adept at discovering new frontiers, now survives by trading rare extraterrestrial artifacts. Among their collection, a peculiar energy weapon catches your eye. The explorer, with a grim determination, mentions that this advanced weapon is the key to securing passage through the hazardous terrains of this alien world. They propose a trade - the weapon in exchange for a vital resource needed for spacecraft repairs, 30 Golds. As you listen to the offer, the eerie sounds of unknown creatures echo in the distance. Will you accept the deal and risk the unknown dangers, or explore other options on this enigmatic exoplanet?'
+        audio_save(astro_text,tts_astro)
+
+        
+        audio_file = open("audio/tts_astro.mp3", "rb")
         audio_bytes = audio_file.read()
         st.audio(audio_bytes, format="audio/mpeg")
 
@@ -406,7 +424,11 @@ def dragonScene():
             f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>Oh no! You encountered a new entity! It\'s a Neural Network, AI, Deep Learning, Cloud Generated Dragonoid Monster! (NNADLBDGD)</p></div>',
             unsafe_allow_html=True,
         )
-        audio_file = open("audio/dragon.mp3", "rb")
+
+        dragon_text='>Oh no! You encountered a new entity! It\'s a Neural Network, AI, Deep Learning, Cloud Generated Dragonoid Monster!'
+        audio_save(dragon_text,tts_dragon)
+        
+        audio_file = open("audio/tts_dragon.mp3", "rb")
         audio_bytes = audio_file.read()
         st.audio(audio_bytes, format="audio/mpeg")
 
@@ -546,7 +568,10 @@ def southpathScene():
             f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>{scene_prompt}</p></div>',
             unsafe_allow_html=True,
         )
-        audio_file = open("audio/south.mp3", "rb")
+        
+        audio_save(scene_prompt,tts_south)
+        
+        audio_file = open("audio/tts_south.mp3", "rb")
         audio_bytes = audio_file.read()
         st.audio(audio_bytes, format="audio/mpeg")
 
@@ -634,7 +659,11 @@ def elfScene():
                 f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>{scene_prompt}</p></div>',
                 unsafe_allow_html=True,
             )
-            audio_file = open("audio/elf1.mp3", "rb")
+
+
+            audio_save(scene_prompt,tts_elf)
+            
+            audio_file = open("audio/tts_elf.mp3", "rb")
             audio_bytes = audio_file.read()
             st.audio(audio_bytes, format="audio/mpeg")
         else:
@@ -642,7 +671,10 @@ def elfScene():
                 f'<div class="fantasy-container"><img src="https://github.com/Mattral/streamlit-Adventure/tree/main/images/cat.gif" class="image"><p>Sorcerres says: "We should go back."</p></div>',
                 unsafe_allow_html=True,
             )
-            audio_file = open("audio/elf2.mp3", "rb")
+            elf_text='Sorcerres says: "We should go back."'
+            audio_save(elf_text,tts_elf2)
+            
+            audio_file = open("audio/tts_elf2.mp3", "rb")
             audio_bytes = audio_file.read()
             st.audio(audio_bytes, format="audio/mpeg")
 
@@ -714,3 +746,13 @@ def libraryScene():
     st.success("Thank you for taking your time!")
     st.info("If you liked the game you can check our repo and share it 🙂")
     st.caption("beta version")
+
+###############################################
+#
+#               Saving Audios
+#
+################################################
+
+def audio_save(words, mp3name):
+   tts = gtts(text=words,lang='en')
+    tts.save("%s.mp3" % mp3name)
